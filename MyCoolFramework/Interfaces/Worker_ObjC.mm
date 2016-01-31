@@ -19,15 +19,15 @@ void cbPassThru(void * cbObject, int value)
 
 @interface Worker_ObjC()
 
-@property id<CallbackProtocol> callbackObject;
-@property NSUInteger tickTime;
+@property(strong, nonatomic) id<CallbackProtocol> callbackObject;
+@property(nonatomic) NSUInteger tickTime;
 
 @end
 
 @implementation Worker_ObjC
 
 // private C++ class instance
-DDG::Worker * myWorker;
+DDG::WorkerBase * myWorker;
 
 -(id)init
 {
@@ -53,7 +53,7 @@ DDG::Worker * myWorker;
     }
     else
     {
-        myWorker = new DDG::Worker(&cbPassThru, (__bridge void *) self.callbackObject, [[NSNumber numberWithInteger:self.tickTime] intValue]);
+        myWorker = new DDG::WorkerBase(&cbPassThru, (__bridge void *) self.callbackObject, [[NSNumber numberWithInteger:self.tickTime] intValue]);
     }
 }
 

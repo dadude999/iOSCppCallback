@@ -15,15 +15,16 @@
 namespace DDG
 {
 
-class Worker
+class WorkerBase
 {
 public:
-    Worker() { }
-    Worker(const std::function<void(void *, int)>& func, void * argToPass, uint32_t period);
-    virtual ~Worker();
+    WorkerBase() { }
+    WorkerBase(const std::function<void(void *, int)>& func, void * cbArg, uint32_t period);
+    virtual ~WorkerBase();
     
+protected:
+    virtual void doWork(void * cbPtr);
 private:
-    void doWork(void * a);
     bool isRunning();
     std::thread * m_workerThread;
     std::function<void(void *, int)> m_PeriodicFunc;

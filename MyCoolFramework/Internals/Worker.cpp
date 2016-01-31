@@ -12,14 +12,14 @@
 
 namespace DDG
 {
-    Worker::Worker(const std::function<void(void *, int)>& func, void * argToPass, uint32_t period) :
+    WorkerBase::WorkerBase(const std::function<void(void *, int)>& func, void * cbArg, uint32_t period) :
     m_Running(true), m_PeriodicFunc(func), m_PeriodMs(period)
     {
         // RAII
-        m_workerThread = new std::thread(&Worker::doWork, this, argToPass);
+        m_workerThread = new std::thread(&WorkerBase::doWork, this, cbArg);
     };
     
-    void Worker::doWork(void * a)
+    void WorkerBase::doWork(void * cbPtr)
     {
         int x = 0;
         while(isRunning())
@@ -28,12 +28,12 @@ namespace DDG
             if(isRunning())
             {
                 x++;
-                m_PeriodicFunc(a, x);
+                m_PeriodicFunc(cbPtr, x);
             }
         }
     }
     
-    bool Worker::isRunning()
+    bool WorkerBase::isRunning()
     {
         bool result = false;
         m_Mutex.lock();
@@ -43,7 +43,7 @@ namespace DDG
         return result;
     }
     
-    Worker::~Worker()
+    WorkerBase::~WorkerBase()
     {
         std::cout << "Destructor!\n";
         // cleanup
