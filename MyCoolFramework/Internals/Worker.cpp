@@ -6,7 +6,7 @@
 //  Copyright © 2016 Daniel Dyre-Greensite. All rights reserved.
 //
 
-#include "Worker.h"
+#include "WorkerBase.h"
 
 #include <iostream>
 

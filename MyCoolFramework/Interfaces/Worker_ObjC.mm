@@ -8,7 +8,7 @@
 
 #import "Worker_ObjC.h"
 
-#include "Internals/Worker.h"
+#include "Internals/WorkerBase.h"
 
 // free function to be used as callback from C++
 void cbPassThru(void * cbObject, int value)
