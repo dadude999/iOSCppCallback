@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65F19EEE1C5C70D300710A63 /* MyCoolFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19EED1C5C70D300710A63 /* MyCoolFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F19EF51C5C70D300710A63 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */; };
+		65F19EFA1C5C70D300710A63 /* MyCoolFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F19EF91C5C70D300710A63 /* MyCoolFrameworkTests.m */; };
+		65F19F071C5C718300710A63 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F19F051C5C718300710A63 /* Worker.cpp */; };
+		65F19F081C5C718300710A63 /* Worker.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19F061C5C718300710A63 /* Worker.h */; };
+		65F19F111C5C7EE200710A63 /* Worker_ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19F0F1C5C7EE200710A63 /* Worker_ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F19F121C5C7EE200710A63 /* Worker_ObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65F19F101C5C7EE200710A63 /* Worker_ObjC.mm */; };
+		65F19F141C5C93EF00710A63 /* CallbackProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19F131C5C93EF00710A63 /* CallbackProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65F19EF61C5C70D300710A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65F19EE11C5C70D200710A63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F19EE91C5C70D300710A63;
+			remoteInfo = MyCoolFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCoolFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F19EED1C5C70D300710A63 /* MyCoolFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoolFramework.h; sourceTree = "<group>"; };
+		65F19EEF1C5C70D300710A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F19EF41C5C70D300710A63 /* MyCoolFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoolFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F19EF91C5C70D300710A63 /* MyCoolFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoolFrameworkTests.m; sourceTree = "<group>"; };
+		65F19EFB1C5C70D300710A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F19F051C5C718300710A63 /* Worker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Worker.cpp; sourceTree = "<group>"; };
+		65F19F061C5C718300710A63 /* Worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		65F19F0F1C5C7EE200710A63 /* Worker_ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker_ObjC.h; sourceTree = "<group>"; };
+		65F19F101C5C7EE200710A63 /* Worker_ObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Worker_ObjC.mm; sourceTree = "<group>"; };
+		65F19F131C5C93EF00710A63 /* CallbackProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F19EE61C5C70D300710A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F19EF11C5C70D300710A63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F19EF51C5C70D300710A63 /* MyCoolFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65F19EE01C5C70D200710A63 = {
+			isa = PBXGroup;
+			children = (
+				65F19EEC1C5C70D300710A63 /* MyCoolFramework */,
+				65F19EF81C5C70D300710A63 /* MyCoolFrameworkTests */,
+				65F19EEB1C5C70D300710A63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F19EEB1C5C70D300710A63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */,
+				65F19EF41C5C70D300710A63 /* MyCoolFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F19EEC1C5C70D300710A63 /* MyCoolFramework */ = {
+			isa = PBXGroup;
+			children = (
+				65F19F0A1C5C7E6E00710A63 /* Interfaces */,
+				65F19F041C5C714600710A63 /* Internals */,
+				65F19EED1C5C70D300710A63 /* MyCoolFramework.h */,
+				65F19EEF1C5C70D300710A63 /* Info.plist */,
+			);
+			path = MyCoolFramework;
+			sourceTree = "<group>";
+		};
+		65F19EF81C5C70D300710A63 /* MyCoolFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				65F19EF91C5C70D300710A63 /* MyCoolFrameworkTests.m */,
+				65F19EFB1C5C70D300710A63 /* Info.plist */,
+			);
+			path = MyCoolFrameworkTests;
+			sourceTree = "<group>";
+		};
+		65F19F041C5C714600710A63 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				65F19F051C5C718300710A63 /* Worker.cpp */,
+				65F19F061C5C718300710A63 /* Worker.h */,
+			);
+			path = Internals;
+			sourceTree = "<group>";
+		};
+		65F19F0A1C5C7E6E00710A63 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				65F19F0F1C5C7EE200710A63 /* Worker_ObjC.h */,
+				65F19F101C5C7EE200710A63 /* Worker_ObjC.mm */,
+				65F19F131C5C93EF00710A63 /* CallbackProtocol.h */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65F19EE71C5C70D300710A63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F19F111C5C7EE200710A63 /* Worker_ObjC.h in Headers */,
+				65F19F081C5C718300710A63 /* Worker.h in Headers */,
+				65F19F141C5C93EF00710A63 /* CallbackProtocol.h in Headers */,
+				65F19EEE1C5C70D300710A63 /* MyCoolFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65F19EE91C5C70D300710A63 /* MyCoolFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F19EFE1C5C70D300710A63 /* Build configuration list for PBXNativeTarget "MyCoolFramework" */;
+			buildPhases = (
+				65F19EE51C5C70D300710A63 /* Sources */,
+				65F19EE61C5C70D300710A63 /* Frameworks */,
+				65F19EE71C5C70D300710A63 /* Headers */,
+				65F19EE81C5C70D300710A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCoolFramework;
+			productName = MyCoolFramework;
+			productReference = 65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F19EF31C5C70D300710A63 /* MyCoolFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F19F011C5C70D300710A63 /* Build configuration list for PBXNativeTarget "MyCoolFrameworkTests" */;
+			buildPhases = (
+				65F19EF01C5C70D300710A63 /* Sources */,
+				65F19EF11C5C70D300710A63 /* Frameworks */,
+				65F19EF21C5C70D300710A63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F19EF71C5C70D300710A63 /* PBXTargetDependency */,
+			);
+			name = MyCoolFrameworkTests;
+			productName = MyCoolFrameworkTests;
+			productReference = 65F19EF41C5C70D300710A63 /* MyCoolFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F19EE11C5C70D200710A63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel Dyre-Greensite";
+				TargetAttributes = {
+					65F19EE91C5C70D300710A63 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					65F19EF31C5C70D300710A63 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 65F19EE41C5C70D300710A63 /* Build configuration list for PBXProject "MyCoolFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65F19EE01C5C70D200710A63;
+			productRefGroup = 65F19EEB1C5C70D300710A63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F19EE91C5C70D300710A63 /* MyCoolFramework */,
+				65F19EF31C5C70D300710A63 /* MyCoolFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F19EE81C5C70D300710A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F19EF21C5C70D300710A63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F19EE51C5C70D300710A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F19F071C5C718300710A63 /* Worker.cpp in Sources */,
+				65F19F121C5C7EE200710A63 /* Worker_ObjC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F19EF01C5C70D300710A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F19EFA1C5C70D300710A63 /* MyCoolFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65F19EF71C5C70D300710A63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F19EE91C5C70D300710A63 /* MyCoolFramework */;
+			targetProxy = 65F19EF61C5C70D300710A63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		65F19EFC1C5C70D300710A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = MyCoolFramework;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65F19EFD1C5C70D300710A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = MyCoolFramework;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65F19EFF1C5C70D300710A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCoolFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		65F19F001C5C70D300710A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyCoolFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		65F19F021C5C70D300710A63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCoolFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65F19F031C5C70D300710A63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyCoolFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F19EE41C5C70D300710A63 /* Build configuration list for PBXProject "MyCoolFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F19EFC1C5C70D300710A63 /* Debug */,
+				65F19EFD1C5C70D300710A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F19EFE1C5C70D300710A63 /* Build configuration list for PBXNativeTarget "MyCoolFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F19EFF1C5C70D300710A63 /* Debug */,
+				65F19F001C5C70D300710A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65F19F011C5C70D300710A63 /* Build configuration list for PBXNativeTarget "MyCoolFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F19F021C5C70D300710A63 /* Debug */,
+				65F19F031C5C70D300710A63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65F19EE11C5C70D200710A63 /* Project object */;
+}
