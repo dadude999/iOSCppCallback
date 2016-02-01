@@ -31,6 +31,7 @@ namespace DDG
                 m_PeriodicFunc(cbPtr, x);
             }
         }
+        std::cout << "Worker thread exiting...\n";
     }
     
     bool WorkerBase::isRunning()
