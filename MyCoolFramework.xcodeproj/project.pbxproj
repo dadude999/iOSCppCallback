@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65939CEE1C9130B500761BE1 /* WorkerImplInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65939CEC1C9130B500761BE1 /* WorkerImplInt.cpp */; };
+		65939CEF1C9130B500761BE1 /* WorkerImplInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 65939CED1C9130B500761BE1 /* WorkerImplInt.h */; };
 		65F19EEE1C5C70D300710A63 /* MyCoolFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19EED1C5C70D300710A63 /* MyCoolFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65F19EF51C5C70D300710A63 /* MyCoolFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */; };
 		65F19EFA1C5C70D300710A63 /* MyCoolFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F19EF91C5C70D300710A63 /* MyCoolFrameworkTests.m */; };
-		65F19F071C5C718300710A63 /* Worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65F19F051C5C718300710A63 /* Worker.cpp */; };
 		65F19F111C5C7EE200710A63 /* Worker_ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19F0F1C5C7EE200710A63 /* Worker_ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65F19F121C5C7EE200710A63 /* Worker_ObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65F19F101C5C7EE200710A63 /* Worker_ObjC.mm */; };
 		65F19F141C5C93EF00710A63 /* CallbackProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F19F131C5C93EF00710A63 /* CallbackProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,13 +29,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65939CEC1C9130B500761BE1 /* WorkerImplInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorkerImplInt.cpp; sourceTree = "<group>"; };
+		65939CED1C9130B500761BE1 /* WorkerImplInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerImplInt.h; sourceTree = "<group>"; };
 		65F19EEA1C5C70D300710A63 /* MyCoolFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyCoolFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F19EED1C5C70D300710A63 /* MyCoolFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCoolFramework.h; sourceTree = "<group>"; };
 		65F19EEF1C5C70D300710A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F19EF41C5C70D300710A63 /* MyCoolFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoolFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F19EF91C5C70D300710A63 /* MyCoolFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoolFrameworkTests.m; sourceTree = "<group>"; };
 		65F19EFB1C5C70D300710A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65F19F051C5C718300710A63 /* Worker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Worker.cpp; sourceTree = "<group>"; };
 		65F19F0F1C5C7EE200710A63 /* Worker_ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Worker_ObjC.h; sourceTree = "<group>"; };
 		65F19F101C5C7EE200710A63 /* Worker_ObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Worker_ObjC.mm; sourceTree = "<group>"; };
 		65F19F131C5C93EF00710A63 /* CallbackProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackProtocol.h; sourceTree = "<group>"; };
@@ -102,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				65FDBF7D1C5DE96400444431 /* WorkerBase.h */,
-				65F19F051C5C718300710A63 /* Worker.cpp */,
+				65939CEC1C9130B500761BE1 /* WorkerImplInt.cpp */,
+				65939CED1C9130B500761BE1 /* WorkerImplInt.h */,
 			);
 			path = Internals;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F19F111C5C7EE200710A63 /* Worker_ObjC.h in Headers */,
+				65939CEF1C9130B500761BE1 /* WorkerImplInt.h in Headers */,
 				65F19F141C5C93EF00710A63 /* CallbackProtocol.h in Headers */,
 				65F19EEE1C5C70D300710A63 /* MyCoolFramework.h in Headers */,
 				65FDBF7E1C5DE96400444431 /* WorkerBase.h in Headers */,
@@ -227,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F19F071C5C718300710A63 /* Worker.cpp in Sources */,
+				65939CEE1C9130B500761BE1 /* WorkerImplInt.cpp in Sources */,
 				65F19F121C5C7EE200710A63 /* Worker_ObjC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +355,7 @@
 				INFOPLIST_FILE = MyCoolFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -367,6 +372,7 @@
 				INFOPLIST_FILE = MyCoolFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCoolFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

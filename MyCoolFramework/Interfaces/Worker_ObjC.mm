@@ -8,13 +8,16 @@
 
 #import "Worker_ObjC.h"
 
-#include "Internals/WorkerBase.h"
+#include "Internals/WorkerImplInt.h"
 
-// free function to be used as callback from C++
-void cbPassThru(void * cbObject, int value)
+namespace
 {
-    id<CallbackProtocol> objToCall = (__bridge id<CallbackProtocol>)cbObject;
-    [objToCall callbackMethod:[[NSNumber numberWithInt:value] integerValue]];
+    // free function to be used as callback from C++
+    void cbPassThru(void * cbObject, int value)
+    {
+        id<CallbackProtocol> objToCall = (__bridge id<CallbackProtocol>)cbObject;
+        [objToCall callbackMethod:[[NSNumber numberWithInt:value] integerValue]];
+    }
 }
 
 @interface Worker_ObjC()
@@ -26,8 +29,8 @@ void cbPassThru(void * cbObject, int value)
 
 @implementation Worker_ObjC
 
-// private C++ class instance
-DDG::WorkerBase * myWorker;
+// private specialized C++ base class instance
+DDG::WorkerBase<int> * myWorker;
 
 -(id)init
 {
@@ -53,7 +56,8 @@ DDG::WorkerBase * myWorker;
     }
     else
     {
-        myWorker = new DDG::WorkerBase(&cbPassThru, (__bridge void *) self.callbackObject, [[NSNumber numberWithInteger:self.tickTime] intValue]);
+        // instantiate with concrete class
+        myWorker = new DDG::WorkerImplInt(&::cbPassThru, (__bridge void *) self.callbackObject, [[NSNumber numberWithInteger:self.tickTime] intValue]);
     }
 }
 
