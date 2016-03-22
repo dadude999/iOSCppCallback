@@ -17,10 +17,11 @@ namespace DDG
 class WorkerImplInt : public WorkerBase<int>
 {
 public:
-    WorkerImplInt() { }
-    WorkerImplInt(const std::function<void(void *, int)>& func, void * cbArg, uint32_t period) : WorkerBase(func, cbArg, period) { }
+    WorkerImplInt(const std::function<void(void *, int)>& func, void * cbArg, uint32_t period) : WorkerBase(func, cbArg), m_PeriodMs(period) { }
 private:
+    WorkerImplInt() { }
     void doWork(void * cbPtr);
+    uint32_t m_PeriodMs;
 };
     
 }

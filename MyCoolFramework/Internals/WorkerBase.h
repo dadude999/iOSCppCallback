@@ -1,13 +1,13 @@
 //
-//  Worker.h
+//  WorkerBase.h
 //  MyCoolFramework
 //
 //  Created by Daniel Dyre-Greensite on 1/29/16.
 //  Copyright © 2016 Daniel Dyre-Greensite. All rights reserved.
 //
 
-#ifndef Worker_h
-#define Worker_h
+#ifndef WorkerBase_h
+#define WorkerBase_h
 
 #include <thread>
 #include <functional>
@@ -21,8 +21,8 @@ class WorkerBase
 {
 public:
     WorkerBase() { }
-    WorkerBase(const std::function<void(void *, T)>& func, void * cbArg, uint32_t period) :
-    m_Running(true), m_PeriodicFunc(func), m_PeriodMs(period)
+    WorkerBase(const std::function<void(void *, T)>& func, void * cbArg) :
+    m_Running(true), m_CallbackFunc(func)
     {
         // RAII
         m_workerThread = new std::thread(&WorkerBase::doWork, this, cbArg);
@@ -52,14 +52,12 @@ protected:
         
         return result;
     }
-    std::function<void(void *, T)> m_PeriodicFunc;
-    uint32_t GetPeriod() { return m_PeriodMs; }
+    std::function<void(void *, T)> m_CallbackFunc;
 private:
     std::thread * m_workerThread;
-    uint32_t m_PeriodMs;
     std::mutex m_Mutex;
     bool m_Running;
 };
 
 }
-#endif /* Worker_h */
+#endif /* WorkerBase_h */

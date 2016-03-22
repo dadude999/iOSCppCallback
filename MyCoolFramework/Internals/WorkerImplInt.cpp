@@ -16,11 +16,11 @@ void WorkerImplInt::doWork(void * cbPtr)
     int x = 0;
     while(isRunning())
     {
-        std::this_thread::sleep_for(std::chrono::milliseconds(GetPeriod()));
+        std::this_thread::sleep_for(std::chrono::milliseconds(m_PeriodMs));
         if(isRunning())
         {
             x++;
-            m_PeriodicFunc(cbPtr, x);
+            m_CallbackFunc(cbPtr, x);
         }
     }
     std::cout << "Worker thread exiting...\n";
